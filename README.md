@@ -1,15 +1,22 @@
-# SinNLRR
-SinNLRR: a robust subspace clustering meth-od for cell type detection by nonnegative and low rank representation
+# AFTV-LRR (Single-cell RNA-seq Clustering)
 
-## Demo
-% > Matlab R2016b <br />
-% SinNLRR(path_data,path_label) <br />
-% path_data is the path of data matrix, each column denotes a gene and each row denotes a cell <br />
-% path_label is the the path of cells' labels <br />
+This repository provides an implementation of **AFTV-LRR**, a clustering method for single-cell RNA-seq (scRNA-seq) data based on **low-rank representation (LRR)** and **adaptive fractional total variation (AFTV)** regularization. The code supports running AFTV-LRR on multiple public scRNA-seq datasets and comparing it with several representative clustering baselines.
 
-[NMI,ARI,grps] = SinNLRR('single_data/Test_12_Goolam.txt','single_data/Test_12_Goolam_label.txt');
+> If you use this code in your research, please cite our paper (see [Citation](#citation)).
 
+---
 
-## Acknowlege
+## Highlights
 
-SubKit (https://github.com/sjtrny/SubKit))
+- **AFTV-LRR** for scRNA-seq clustering (LRR + adaptive fractional TV regularization)
+- Supports running experiments on multiple datasets
+- Evaluation metrics commonly used in scRNA-seq clustering (e.g., **ARI**, etc.)
+- Includes scripts for spectral clustering on the learned similarity/representation matrix
+- Easy entry point: `main.m`
+
+---
+
+## Repository Structure
+
+> (Adjust this section based on your actual folders/files.)
+
