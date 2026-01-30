@@ -24,5 +24,3 @@ This repository contains a MATLAB implementation of **AFTV-LRR** for **single-ce
 We do **not** host raw scRNA-seq datasets in this repository.
 Please download datasets from their public sources (as described in the manuscript), then place them locally and update the dataset path in `main.m`.
 
-A suggested local layout is:
-
