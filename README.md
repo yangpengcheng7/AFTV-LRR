@@ -1,22 +1,28 @@
-# AFTV-LRR (Single-cell RNA-seq Clustering)
+# AFTV-LRR for scRNA-seq Clustering (MATLAB)
 
-This repository provides an implementation of **AFTV-LRR**, a clustering method for single-cell RNA-seq (scRNA-seq) data based on **low-rank representation (LRR)** and **adaptive fractional total variation (AFTV)** regularization. The code supports running AFTV-LRR on multiple public scRNA-seq datasets and comparing it with several representative clustering baselines.
+This repository contains a MATLAB implementation of **AFTV-LRR** for **single-cell RNA-seq (scRNA-seq) clustering**, along with scripts for running experiments and (optionally) baseline methods used in our manuscript.
 
-> If you use this code in your research, please cite our paper (see [Citation](#citation)).
+## Workflow
 
----
+![Workflow](figures/workflow.png)
 
 ## Highlights
 
-- **AFTV-LRR** for scRNA-seq clustering (LRR + adaptive fractional TV regularization)
-- Supports running experiments on multiple datasets
-- Evaluation metrics commonly used in scRNA-seq clustering (e.g., **ARI**, etc.)
-- Includes scripts for spectral clustering on the learned similarity/representation matrix
-- Easy entry point: `main.m`
+- Representation learning + graph/TV regularization for robust scRNA-seq clustering.
+- MATLAB implementation with a single entry point: **`main.m`**.
+- Scripts/utilities for clustering and evaluation (e.g., ARI/NMI), depending on your configuration.
 
----
+## Requirements
 
-## Repository Structure
+- **MATLAB** (R2018a+ recommended; newer versions are fine).
+- Standard MATLAB toolboxes for matrix computation and plotting (as required by your environment).
 
-> (Adjust this section based on your actual folders/files.)
+## Quick Start
+
+### 1) Prepare data
+
+We do **not** host raw scRNA-seq datasets in this repository.
+Please download datasets from their public sources (as described in the manuscript), then place them locally and update the dataset path in `main.m`.
+
+A suggested local layout is:
 
